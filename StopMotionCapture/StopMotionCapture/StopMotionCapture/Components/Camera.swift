@@ -35,8 +35,8 @@ class Camera: NSObject {
 
     func setup() {
         captureSession.beginConfiguration()
-        let captureDevice: AVCaptureDevice? = AVCaptureDevice.default(.external, for: .video, position: .back)
-        guard let captureDeviceInput: AVCaptureDeviceInput = try? AVCaptureDeviceInput(device: captureDevice!),
+        let captureDevice: AVCaptureDevice = AVCaptureDevice.default(.external, for: .video, position: .back) ?? AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)!
+        guard let captureDeviceInput: AVCaptureDeviceInput = try? AVCaptureDeviceInput(device: captureDevice),
               captureSession.canAddInput(captureDeviceInput)
         else { return }
         captureSession.addInput(captureDeviceInput)
