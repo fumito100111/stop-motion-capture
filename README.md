@@ -9,7 +9,7 @@
 ### 1. Download Application Disk Image (.dmg)
 Run the commands below to download Application Disk Image.
 ```zsh
-git clone https://github.com/fumito100111/stop-motion-capture.git && stop-motion-capture
+git clone https://github.com/fumito100111/stop-motion-capture.git && cd stop-motion-capture
 hdiutil mount StopMotionCapture_1.0.0.dmg
 open /Volumes/StopMotionCapture_1.0.0
 ```
