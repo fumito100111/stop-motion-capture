@@ -10,8 +10,8 @@
 Run the commands below to download Application Disk Image.
 ```zsh
 git clone https://github.com/fumito100111/stop-motion-capture.git && cd stop-motion-capture
-hdiutil mount StopMotionCapture_1.0.0.dmg
-open /Volumes/StopMotionCapture_1.0.0
+hdiutil mount StopMotionCapture_1.1.0.dmg
+open /Volumes/StopMotionCapture_1.1.0
 ```
 
 ### 2. Drag & Drop into Applications
@@ -21,6 +21,6 @@ As below, Drag & Drop into Applications
 ### 3. Erase unnecessary files
 Run the commands below to erase unnecessary files.
 ```zsh
-hdiutil detach /Volumes/StopMotionCapture_1.0.0
+hdiutil detach /Volumes/StopMotionCapture_1.1.0
 cd .. && rm -rf stop-motion-capture
 ```
